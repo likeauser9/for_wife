@@ -1,0 +1,142 @@
+import turtle
+
+window = turtle.Screen()
+window.title("Hello")
+window.bgcolor("black")
+
+pen = turtle.Turtle()
+pen.speed(1)
+pen.width(3)
+pen.color("white")
+
+def draw_p():
+    pen.penup()
+    pen.goto(-450, 350)
+    pen.pendown()
+    pen.goto(-350, 250)
+    pen.penup()
+    pen.goto(-400, 350)
+    pen.pendown()
+    pen.goto(-400, 250)
+    pen.penup()
+    pen.goto(-350, 350)
+    pen.pendown()
+    pen.goto(-450, 250)
+
+def draw_e():
+  pen.penup()
+  pen.goto(-300, 350)
+  pen.pendown()
+  pen.goto(-300, 250)
+  pen.penup()
+  pen.goto(-300, 350)
+  pen.pendown()
+  pen.goto(-250, 350)
+  pen.penup()
+  pen.goto(-300, 250)
+  pen.pendown()
+  pen.goto(-250, 250)
+  pen.penup()
+  pen.goto(-300, 300)
+  pen.pendown()
+  pen.goto(-250, 300)
+
+def draw_n():
+  pen.penup()
+  pen.goto(-200, 350)
+  pen.pendown()
+  pen.goto(-200, 250)
+  pen.penup()
+  pen.goto(-200, 300)
+  pen.pendown()
+  pen.goto(-150, 300)
+  pen.penup()
+  pen.goto(-150, 350)
+  pen.pendown()
+  pen.goto(-150, 250)
+
+def draw_ya():
+  pen.penup()
+  pen.goto(-50, 350)
+  pen.pendown()
+  pen.goto(-100, 350)
+  pen.goto(-100, 300)
+  pen.goto(-50, 300)
+  pen.goto(-100, 250)
+
+  pen.penup()
+  pen.goto(-50, 350)
+  pen.pendown()
+  pen.goto(-50, 250)
+
+def draw_komma():
+  pen.penup()
+  pen.goto(-30, 250)
+  pen.pendown()
+  pen.goto(-30, 240)
+
+def draw_I():
+  pen.penup()
+  pen.goto(20, -350)
+  pen.pendown()
+  pen.goto(70, -350)
+  pen.penup()
+  pen.goto(45, -350)
+  pen.pendown()
+  pen.goto(45, -250)
+  pen.penup()
+  pen.goto(20, -250)
+  pen.pendown()
+  pen.goto(70, -250)
+
+def draw_L():
+  pen.penup()
+  pen.goto(120, -250)
+  pen.pendown()
+  pen.goto(120, -350)
+  pen.goto(170, -350)
+
+def draw_U():
+  pen.penup()
+  pen.goto(220, -250)
+  pen.pendown()
+  pen.goto(220, -350)
+  pen.goto(270, -350)
+  pen.goto(270, -250)
+
+def draw_Y():
+  pen.penup()
+  pen.goto(210, -250)
+  pen.pendown()
+  pen.goto(240, -300)
+  pen.penup()
+  pen.goto(270, -250)
+  pen.pendown()
+  pen.goto(220, -350)
+
+def draw_heart():
+  pen.pencolor("red")
+  pen.width(10)
+  pen.penup()
+  pen.goto(0, -100)
+  pen.pendown()
+  pen.goto(-150, 75)
+  pen.goto(-75, 150)
+  pen.goto(0, 100)
+  pen.goto(75, 150)
+  pen.goto(150, 75)
+  pen.goto(0, -100)
+
+draw_p()
+draw_e()
+draw_n()
+draw_ya()
+draw_komma()
+draw_I()
+draw_L()
+draw_Y()
+draw_heart()
+
+pen.hideturtle()
+
+window.mainloop()
